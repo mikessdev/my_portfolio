@@ -1,5 +1,6 @@
 import React from "react";
 import { DarkLightButton } from "./DarkLightButton";
+import { DropDown } from "./DropDown";
 
 export const Header: React.FC = () => {
   return (
@@ -13,8 +14,11 @@ export const Header: React.FC = () => {
           <li className="mr-[10px]">contatos</li>
         </ul>
       </nav>
-      <div className="ml-[20px]">
-        <DarkLightButton></DarkLightButton>
+      <div className="flex items-center">
+        <div className="mr-[30px]">
+          <DarkLightButton />
+        </div>
+        <DropDown />
       </div>
     </header>
   );
